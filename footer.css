@@ -1,0 +1,175 @@
+footer {
+  background-image:url(assets/footer-image-lohakart.webp);
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:2rem;
+  position:relative;
+  overflow:hidden
+  }
+  
+  footer::before {
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.6);
+  z-index:1
+  }
+  
+  .footer-container,.bottom-bar,.whatsapp-float {
+  position:relative;
+  z-index:2
+  }
+  
+  .footer-container {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap
+  }
+  
+  .company-info,.footer-links,.join-Lohakart {
+  flex:1;
+  margin:1rem;
+  min-width:250px
+  }
+  
+  .logo-bottom {
+  display:flex;
+  align-items:center;
+  margin-bottom:1rem
+  }
+  
+  .logo-bottom img {
+  height:40px;
+  width:200px;
+  margin-right:10px
+  }
+  
+  .app-stores img {
+  height:40px;
+  margin-right:10px
+  }
+  
+  .footer-links {
+  display:flex;
+  justify-content:space-evenly
+  }
+  
+  .link-column p a {
+  text-decoration:none;
+  color:#fff;
+  font-size:18px
+  }
+  
+  .flex {
+  display:flex
+  }
+  
+  .main-buss {
+  font-size:20px;
+  font-weight:700
+  }
+  
+  .join-Lohakart {
+  background-color:#be1800;
+  height:fit-content;
+  padding:1rem;
+  border-radius:10px
+  }
+  
+  .join-Lohakart button {
+  background-color:#1662afe1;
+  border:none;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+  text-decoration:none;
+  color:#fff
+  }
+  
+  .join-Lohakart button:hover {
+  background-color:#005081
+  }
+  
+  .bottom-bar {
+  text-align:center;
+  margin-top:2rem;
+  padding-top:1rem;
+  border-top:1px solid #444
+  }
+  
+  .whatsapp-float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background-color:#25D366;
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  text-decoration:none;
+  box-shadow:2px 2px 3px rgba(0,0,0,0.3);
+  animation:breathing 1.8s ease-in-out infinite
+  }
+  
+  .watsapp_img {
+  height:30px;
+  filter:brightness(0) invert(1)
+  }
+  
+  @keyframes breathing {
+  0%,100% {
+  transform:scale(0.8)
+  }
+  
+  50% {
+  transform:scale(1)
+  }
+  }
+  
+  .animate-section {
+  opacity:0;
+  transform:translateX(-100%);
+  transition:opacity .6s ease,transform .7s ease
+  }
+  
+  .animate-section.show {
+  opacity:1;
+  transform:translateX(0)
+  }
+  
+  .animate-section3 {
+  opacity:0;
+  transform:translateY(-100%);
+  transition:opacity .6s ease,transform .7s ease
+  }
+  
+  .animate-section3.show {
+  opacity:1;
+  transform:translateY(0)
+  }
+  
+  @media (max-width: 768px) {
+  footer {
+  background-size:auto
+  }
+  
+  .footer-container {
+  flex-direction:column
+  }
+  
+  .bottom-bar {
+  flex-direction:column;
+  text-align:center
+  }
+  
+  .social-icons {
+  margin-top:1rem
+  }
+  }

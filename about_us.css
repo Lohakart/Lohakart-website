@@ -1,0 +1,136 @@
+.about-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 20px;
+    max-width:1200px;
+    margin:0 auto
+    }
+    
+    .text-content {
+    flex:1;
+    padding-right:40px
+    }
+    
+    .text-content h1 {
+    font-size:2.5em;
+    margin-bottom:20px;
+    position:relative;
+    display:inline-block
+    }
+    
+    .text-content h1::after {
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:50%;
+    height:3px;
+    background-color:#005081
+    }
+    
+    .text-content p {
+    font-size:1.1em;
+    line-height:1.6
+    }
+    
+    .image-container {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center
+    }
+    
+    .animated-image {
+    max-width:100%;
+    height:auto;
+    transition:transform .5s ease
+    }
+    
+    .animated-image2 {
+    max-width:100%;
+    height:auto;
+    transition:transform .5s ease
+    }
+    
+    @media (max-width: 768px) {
+    .about-container {
+    flex-direction:column-reverse
+    }
+    
+    .text-content,.image-container {
+    width:100%;
+    padding:20px 0
+    }
+    
+    .text-content {
+    padding-right:0
+    }
+    }
+    
+    .people-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:50px 20px;
+    max-width:1200px;
+    margin:0 auto
+    }
+    
+    .people-container2 {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:50px 20px;
+    max-width:1200px;
+    margin:0 auto
+    }
+    
+    .image-content {
+    flex:1;
+    padding-right:40px
+    }
+    
+    .image-content img {
+    max-width:100%;
+    height:auto;
+    border-radius:8px
+    }
+    
+    .image-caption {
+    text-align:center;
+    margin-top:15px;
+    color:#005081;
+    font-size:20px;
+    font-weight:700
+    }
+    
+    .text-content {
+    flex:1
+    }
+    
+    .text-content h2 {
+    font-weight:bolder;
+    font-size:2.5em;
+    margin-bottom:20px;
+    color:#be1800
+    }
+    
+    @media (max-width: 768px) {
+    .people-container {
+    flex-direction:column
+    }
+    
+    .people-container2 {
+    flex-direction:column-reverse
+    }
+    
+    .image-content,.text-content {
+    width:100%;
+    padding:20px 0
+    }
+    
+    .image-content {
+    padding-right:0
+    }
+    }
