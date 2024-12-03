@@ -34,7 +34,7 @@ showSlide(currentSlide - 1);
 }
 
 // Automatically move to the next slide every 7 seconds
-setInterval(nextSlide, 7000);
+setInterval(nextSlide, 5000);
 
 // Event listeners for navigation buttons
 prevBtn.addEventListener('click', prevSlide);
