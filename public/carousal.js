@@ -42,7 +42,7 @@ nextBtn.addEventListener('click', nextSlide);
 
 // Typing Effect for the Last Word
 const typingTextElement = document.getElementById('typing-text');
-const words = ["Metal Trading", "Metal Fabrication", "Metal Procurement", "Metal Recycling", "Metal Casting / Forging", "Metal Machining / Job Works"];
+const words = ["Metal Supply", "Metal Fabrication", "Metal Procurement", "Metal Recycling", "Metal Casting / Forging", "Metal Machining / Job Works"];
 let wordIndex = 0;
 let letterIndex = 0;
 let isDeleting = false;
