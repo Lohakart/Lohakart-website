@@ -2,39 +2,103 @@
 const categories = [
     "All",
     "Mild Steel",
-    "Galvanised Coil",
+    "Galvanised Steel",
     "Stainless Steel",
     "Copper",
     "Zinc",
     "Aluminum"
 ];
 
+// Mild steals products
 const products = [
 { name: "TMT BARS", image: "products/tmt-bars-thermo-mechanically-treated-bars-lohakart.webp", alt: "High-quality TMT bars (Thermo-Mechanically Treated Bars) for construction and infrastructure applications, sourced and supplied by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel"},
 { name: "PLATES", image: "products/metal-plates-sourcing-supply-lohakart.webp", alt: "Durable metal plates for manufacturing, construction, and industrial applications, provided by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "HR SHEETS", image: "products/hr-sheets-hot-rolled-sheets-lohakart.webp", alt: "Premium HR sheets (Hot Rolled Sheets) for construction and manufacturing industries, available at LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
-{ name: "CR SHEETS", image: "products/cr-sheets-cold-rolled-sheets-lohakart.webp", alt: "High-quality CR sheets (Cold Rolled Sheets) for precision manufacturing, offered by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "CHANNEL ISMC", image: "products/channel-ismc-indian-standard-medium-channel-lohakart.webp", alt: "Reliable Channel ISMC (Indian Standard Medium Channel) metal products for structural applications, sourced from LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
+{ name: "CR SHEETS", image: "products/cr-sheets-cold-rolled-sheets-lohakart.webp", alt: "High-quality CR sheets (Cold Rolled Sheets) for precision manufacturing, offered by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "BEAMS | JOIST", image: "products/metal-beams-joist-structural-metal-lohakart.webp", alt: "Strong metal beams and joists for construction and infrastructure projects, available at LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "ANGLES ISA", image: "products/angles-isa-indian-standard-angles-lohakart.webp", alt: "High-quality Angles ISA (Indian Standard Angles) for structural applications, provided by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "ROUND | SQUARE PIPE", image: "products/round-square-pipes-rhs-metal-piping-lohakart.webp", alt: "Versatile round and square pipes for plumbing, construction, and industrial use, sourced by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "ROUND BARS", image: "products/round-bars-metal-sourcing-lohakart.webp", alt: "Durable round bars for manufacturing, construction, and engineering, supplied by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "MS CHEQURED PLATE", image: "products/ms-chequered-plate-mild-steel-lohakart.webp", alt: "Mild Steel Chequered Plates (MS Chequered Plate) for flooring and industrial applications, offered by LohaKart", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "MS STEEL SCRAP", image: "products/ms-steel-scrap-mild-steel-lohakart.webp", alt: "High-quality MS Steel Scrap (Mild Steel Scrap) for recycling and industrial use, available at LohaKart", quantity: 0, unit: "MT", category: "Mild Steel" },
+{
+    name: "MS Foundation Bolt",
+    image: "products/ms-foundation-bolt-lohakart.webp",
+    alt: "Heavy-duty MS Foundation Bolts for structural anchoring, sourced from LohaKart.",
+    quantity: 0,
+    unit: "MT",
+    category: "Mild Steel"
+  },
+  
+// Galvanised materials
 
-{ name: "GI SHEETS", image: "products/gi-sheets-galvanized-iron-sheets-lohakart.webp", alt: "Premium GI Sheets (Galvanized Iron Sheets) for roofing and industrial applications, sourced from LohaKart.", quantity: 0, unit: "MT", category: "Galvanised Coil" },
-
+{ name: "GI SHEETS", image: "products/gi-sheets-galvanized-iron-sheets-lohakart.webp", alt: "Premium GI Sheets (Galvanized Iron Sheets) for roofing and industrial applications, sourced from LohaKart.", quantity: 0, unit: "MT", category: "Galvanised Steel" },
+{
+    name: "Cable Tray",
+    image: "products/cable-tray-lohakart.webp",
+    alt: "High-quality Cable Trays for organized cable management in industrial setups – LohaKart.",
+    quantity: 0,
+    unit: "MT",
+    category: "Galvanised Steel"
+  },
+  {
+    name: "GI Decking Sheet",
+    image: "products/gi-decking-sheet-lohakart.webp",
+    alt: "High-strength GI Decking Sheets for flooring and roofing applications – LohaKart.",
+    quantity: 0,
+    unit: "MT",
+    category: "Galvanised Steel"
+  },
+  { name: "GI C-Z Purlin", image: "products/gi-cz-purlin-lohakart.webp", alt: "Durable GI C-Z Purlin for industrial and structural support, available at LohaKart.", quantity: 0, unit: "MT", category: "Galvanised Steel" },
+{
+  name: "Gi Threaded Rod",
+  image: "products/gi-threaded-rod-lohakart.webp",
+  alt: "Premium GI Threaded Rods for fastening and industrial applications – LohaKart.",
+  quantity: 0,
+  unit: "MT",
+  category: "Galvanised Steel"
+},
+{
+    name: "GI Channel",
+    image: "products/gi-channel-lohakart.webp",
+    alt: "Strong and reliable GI Channels for structural framing and support – available at LohaKart.",
+    quantity: 0,
+    unit: "MT",
+    category: "Galvanised Steel"
+  },
+  {
+    name: "GI Raceway",
+    image: "products/gi-raceway-lohakart.webp",
+    alt: "Premium GI Raceway for safe and efficient cable routing, sourced from LohaKart.",
+    quantity: 0,
+    unit: "MT",
+    category: "Galvanised Steel"
+  },
+  {
+    name: "Cable Ladder",
+    image: "products/cable-ladder-lohakart.webp",
+    alt: "Durable Cable Ladders for heavy-duty cable support systems – LohaKart quality.",
+    quantity: 0,
+    unit: "MT",
+    category: "Galvanised Steel"
+  },
+  
+//  Stainless Steal products
 { name: "SS SHEETS", image: "products/ss-sheets-stainless-steel-sheets-lohakart.webp", alt: "High-quality SS Sheets (Stainless Steel Sheets) for industrial and commercial uses, offered by LohaKart.", quantity: 0, unit: "MT", category: "Stainless Steel" },
 { name: "SS PIPE", image: "products/ss-pipes-stainless-steel-pipes-lohakart.webp", alt: "Durable SS Pipes (Stainless Steel Pipes) for plumbing, construction, and industrial applications, available from LohaKart.", quantity: 0, unit: "MT", category: "Stainless Steel" },
 { name: "SS ROD", image: "products/ss-rod-stainless-steel-rod-lohakart.webp", alt: "Premium SS Rods (Stainless Steel Rods) for manufacturing and construction, provided by LohaKart.", quantity: 0, unit: "MT", category: "Stainless Steel" },
 
+//  Copper products
 { name: "COPPER WIRE", image: "products/copper-wire-metal-sourcing-lohakart.webp", alt: "High-quality copper wire for electrical and industrial applications, sourced by LohaKart.", quantity: 0, unit: "MT", category: "Copper" },
 { name: "COPPER SHEET", image: "products/copper-sheet-metal-supply-lohakart.webp", alt: "Versatile copper sheets for industrial, electrical, and manufacturing uses, offered by LohaKart.", quantity: 0, unit: "MT", category: "Copper" },
 { name: "COPPER TUBE", image:"products/copper-tube-metal-pipe-lohakart.webp", alt: "Reliable copper tubes for plumbing, electrical, and industrial applications, available at LohaKart.", quantity: 0, unit: "MT", category: "Copper" },
 
+// Zinc products
 { name: "ZINC SHEET", image: "products/zinc-sheet-metal-supply-lohakart.webp", alt: "High-quality zinc sheets for industrial and construction purposes, sourced and supplied by LohaKart.", quantity: 0, unit: "MT", category: "Zinc" },
 { name: "ZINC INGOT", image: "products/zinc-ingot-metal-sourcing-lohakart.webp", alt: "Pure zinc ingots for metal manufacturing and industrial use, available from LohaKart.", quantity: 0, unit: "MT", category: "Zinc" },
 
+// Aluminum products
 { name: "ALUMINUM SHEET", image:"products/aluminum-sheet-metal-sourcing-lohakart.webp", alt: "Premium aluminum sheets for manufacturing, construction, and industrial applications, provided by LohaKart.", quantity: 0, unit: "MT", category: "Aluminum" },
 { name: "ALUMINUM ROD", image: "products/aluminum-rod-metal-supply-lohakart.webp", alt: "Durable aluminum rods for industrial, manufacturing, and construction needs, sourced by LohaKart.", quantity: 0, unit: "MT", category: "Aluminum" },
 { name: "ALUMINUM PROFILE", image: "products/aluminum-profile-metal-sourcing-lohakart.webp", alt: "Versatile aluminum profiles for structural applications and manufacturing, available from LohaKart.", quantity: 0, unit: "MT", category: "Aluminum" }
