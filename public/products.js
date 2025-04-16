@@ -24,7 +24,7 @@ const products = [
     quantity: 0,
     unit: "MT",
     category: "Mild Steel"
-  },
+},
 { name: "ANGLES ISA", image: "products/angles-isa-indian-standard-angles-lohakart.webp", alt: "High-quality Angles ISA (Indian Standard Angles) for structural applications, provided by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "ROUND | SQUARE PIPE", image: "products/round-square-pipes-rhs-metal-piping-lohakart.webp", alt: "Versatile round and square pipes for plumbing, construction, and industrial use, sourced by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
 { name: "ROUND BARS", image: "products/round-bars-metal-sourcing-lohakart.webp", alt: "Durable round bars for manufacturing, construction, and engineering, supplied by LohaKart.", quantity: 0, unit: "MT", category: "Mild Steel" },
