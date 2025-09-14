@@ -6,7 +6,8 @@ const categories = [
     "Stainless Steel",
     "Copper",
     "Zinc",
-    "Aluminum"
+    "Aluminum",
+    "Green Steel"
 ];
 
 // Mild steals products
