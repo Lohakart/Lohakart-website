@@ -605,7 +605,7 @@
             line-height: 1.7;
         }
 
-        .cta-button {
+        .ctaa-button {
             display: inline-flex;
             align-items: center;
             gap: 12px;
@@ -622,7 +622,7 @@
             overflow: hidden;
         }
 
-        .cta-button::before {
+        .ctaa-button::before {
             content: '';
             position: absolute;
             top: 0;
@@ -633,18 +633,18 @@
             transition: left 0.4s ease;
         }
 
-        .cta-button:hover::before {
+        .ctaa-button:hover::before {
             left: 0;
         }
 
-        .cta-button:hover {
+        .ctaa-button:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 50px rgba(0,0,0,0.3);
             color: var(--white);
             text-decoration: none;
         }
 
-        .cta-button span {
+        .ctaa-button span {
             position: relative;
             z-index: 2;
         }
