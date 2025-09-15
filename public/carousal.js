@@ -10,8 +10,9 @@ const slideTexts = [
     "Metal Fabrication", // Second slide - metal-trading-b2b-solutions image
     "Metal Procurement", // Third slide - metal-processing-b2b-solutions image
     "Metal Recycling", // Fourth slide - metal-recycling-solutions image
+    "Carbon Accounting",
     "Metal Casting / Forging", // Fifth slide - metal-casting-services image
-    "Metal Machining / Job Works" // Sixth slide - metal-machining-services image
+    "Machining / Job Works" // Sixth slide - metal-machining-services image
 ];
 
 const SLIDE_DURATION = 7000; // 7 seconds per slide
