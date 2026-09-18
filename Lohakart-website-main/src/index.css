@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Steel Industrial Theme - Light Mode */
+    --background: 210 20% 98%;
+    --foreground: 210 12% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 12% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 12% 12%;
+
+    /* Primary - Steel Blue */
+    --primary: 210 50% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Dark Gray */
+    --secondary: 210 10% 23%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Light Gray */
+    --muted: 210 15% 95%;
+    --muted-foreground: 210 10% 40%;
+
+    /* Accent - Molten Orange */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success - Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 50% 40%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 50% 40%), hsl(210 60% 50%));
+    --gradient-steel: linear-gradient(180deg, hsl(210 15% 95%), hsl(210 20% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 50% 40%) 0%, hsl(210 12% 12%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(210 20% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(210 20% 15% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(210 20% 15% / 0.1);
+    --shadow-steel: 0 8px 30px hsl(210 50% 40% / 0.12);
+
+    /* Sidebar */
+    --sidebar-background: 210 10% 23%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 210 50% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 30%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 210 15% 30%;
+    --sidebar-ring: 210 50% 40%;
+
+    /* Animations */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Steel Industrial Theme - Dark Mode */
+    --background: 210 12% 12%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 10% 16%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 10% 16%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 60% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 25%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 210 10% 20%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 210 60% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(210 60% 50%), hsl(210 70% 60%));
+    --gradient-steel: linear-gradient(180deg, hsl(210 10% 16%), hsl(210 12% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 60% 50%) 0%, hsl(210 12% 12%) 100%);
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.5);
+    --shadow-steel: 0 8px 30px hsl(210 60% 50% / 0.25);
+
+    --sidebar-background: 210 10% 16%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 210 60% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 25%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 210 15% 25%;
+    --sidebar-ring: 210 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 20px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+  }
+}
